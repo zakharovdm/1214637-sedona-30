@@ -9,20 +9,22 @@
     <a class="header-logo" href="#">
       <img src="" alt="Логотип Седона">
     </a>
-    <ul class="nav-list">
-      <li>
-        <a href="blank.html">Информация</a>
-      </li>
-      <li>
-        <a href="blank.html">Фото и видео</a>
-      </li>
-      <li>
-        <a href="blank.html">Карта штата</a>
-      </li>
-      <li>
-        <a href="catalog.html">Гостиницы</a>
-      </li>
-    </ul>
+    <nav class="site-navigation">
+      <ul class="nav-list">
+        <li>
+          <a href="blank.html">Информация</a>
+        </li>
+        <li>
+          <a href="blank.html">Фото и видео</a>
+        </li>
+        <li>
+          <a href="blank.html">Карта штата</a>
+        </li>
+        <li>
+          <a href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -90,10 +92,12 @@
         <p class="search-form__checkin-field">
           <label for="checkin">Дата заезда:</label>
           <input type="date" name="checkin-date" id="checkin">
+          <span class="search-form__calendar"></span>
         </p>
         <p class="search-form__checkout-field">
-          <label for="checkout">Дата заезда:</label>
+          <label for="checkout">Дата выезда:</label>
           <input type="date" name="checkout-date" id="checkout">
+          <span class="search-form__calendar"></span>
         </p>
         <p class="search-form__number-adults">
           <label for="adults">Взрослые:</label>
@@ -103,7 +107,7 @@
           <label for="children">Дети:</label>
           <input type="number" name="number-children" id="children" value="0">
         </p>
-        <button class="search-form__button-search">Найти</button>
+        <button class="search-form__button-search" type="submit">Найти</button>
       </form>
       <div class="map">
         <!--Здесь будет интерактивная карта-->
