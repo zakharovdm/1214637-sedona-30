@@ -1,0 +1,82 @@
+/* Fonts */
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PTSans.woff2) format("woff2"),
+       url(../fonts/PTSans.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PTSans-Bold.woff2) format("woff2"),
+       url(../fonts/PTSans-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+}
+
+/* Global */
+
+.page-body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
+/* header */
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-item a {
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/* promo */
+
+.promo {
+  width: 1200px;
+  height: 509px;
+
+  background-image: url(../img/promo-background.jpg);
+  background-repeat: no-repeat;
+}
