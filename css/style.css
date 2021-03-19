@@ -20,6 +20,10 @@
 
 :root {
   --basic-black: #000000;
+  --basic-dark-gray: #333333;
+  --basic-light-gray: #EEEEEE;
+  --basic-white: #FFFFFF;
+  --basic-blue: #81B3D2;
 }
 
 /* Global */
@@ -31,6 +35,7 @@
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
 a {
@@ -67,8 +72,14 @@ img {
 
 .nav-item a {
   line-height: 26px;
-  text-transform: uppercase;
   color: var(--basic-black);
+}
+
+/* text */
+
+.text {
+  font-weight: 400;
+  color: var( --basic-dark-gray);
 }
 
 /* promo */
@@ -79,4 +90,41 @@ img {
 
   background-image: url(../img/promo-background.jpg);
   background-repeat: no-repeat;
+}
+
+/* features */
+
+.features .lead {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.subtitle {
+  line-height: 26px;
+}
+
+.features-list,
+.feature-elements,
+.feature-cards {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+}
+
+.feature-description {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.feature-description p {
+  font-weight: 400;
+}
+
+.feature-cards {
+  background-color: var(--basic-light-gray);
 }
