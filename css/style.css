@@ -247,6 +247,93 @@ img {
   fill: var(--basic-blue);
 }
 
+/* filter */
+
+.filter {
+  background-image: url(../img/filter-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.filter-form fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter-form label {
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.infrastructure-list,
+.type-house-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filter-form__title {
+  font-size: 16px;
+  color: var(--basic-white);
+}
+
+.filter-form__button {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+}
+
+/* sorting */
+
+.inner-sorting h2,
+.sorting-item a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sorting-item a {
+  color: rgba(var(--basic-black-rgb), 0.3);
+
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sorting-item-active a {
+  color: var(--basic-blue);
+
+  border-bottom: none;
+}
+
+.sorting-item .sorting-trg-link {
+  border-bottom: none;
+}
+
+.sorting-down-link svg {
+  transform: rotate(180deg);
+}
+
+.trg-active path {
+  fill: var(--basic-blue);
+}
+
+.results {
+  font-size: 21px;
+  line-height: 26px;
+}
+
 /* footer */
 
 .footer-info p,
