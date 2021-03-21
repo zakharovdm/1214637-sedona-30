@@ -40,7 +40,17 @@
 
 /* Global */
 
+.page {
+  height: 100%;
+}
+
 .page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 1200px;
+  min-height: 100%;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -48,6 +58,8 @@
   line-height: 21px;
   color: var(--basic-black);
   text-transform: uppercase;
+
+  background-color: var(--basic-very-light-gray);
 }
 
 a {
@@ -71,6 +83,13 @@ img {
   border: 0;
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-color: var(--basic-white);
 }
 
 /* header */
