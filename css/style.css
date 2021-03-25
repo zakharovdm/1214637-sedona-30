@@ -166,6 +166,7 @@ img {
 .promo {
   width: 1200px;
   height: 509px;
+  margin-bottom: 42px;
 
   background-image: url(../img/promo-background.jpg);
   background-repeat: no-repeat;
@@ -177,13 +178,51 @@ img {
 
 /* features */
 
-.features .lead {
+.feature-item:first-child {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 254px 330px;
+}
+
+.description-img-town {
+  grid-column: 2 / 4;
+}
+
+.feature-elements {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+}
+
+.feature-item:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-img-bridge {
+  order: -1;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-lead {
+  width: 470px;
+  margin: 0 auto;
+  padding-bottom: 42px;
+
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
 }
 
 .subtitle {
+  margin: 0;
+  padding-bottom: 56px;
+
   line-height: 26px;
+  text-align: center;
 }
 
 .features-list,
@@ -200,6 +239,8 @@ img {
 }
 
 .feature-description {
+  width: 400px;
+
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
@@ -208,8 +249,69 @@ img {
   font-weight: 400;
 }
 
-.feature-cards {
+.feature-description_title {
+  width: 150px;
+  margin: 0 auto;
+  padding: 52px 10px 23px;
+
+  text-align: center;
+}
+
+.feature-description_number,
+.feature-card-number {
+  margin: 0;
+  padding-bottom: 23px;
+
+  text-align: center;
+}
+
+.feature-description_text {
+  width: 305px;
+  margin: 0 auto;
+  padding: 0 10px 51px;
+
+  text-align: center;
+}
+
+.feature-element {
+  width: 400px;
+}
+
+.element-title {
+  margin: 0;
+  padding: 160px 10px 25px;
+
+  text-align: center;
+}
+
+.element-text {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0 10px 82px;
+
+  text-align: center;
+}
+
+.feature-card-item {
+  width: 400px;
+
   background-color: var(--basic-light-gray);
+}
+
+.feature-card-title {
+  width: 120px;
+  margin: 0 auto;
+  padding: 47px 10px 25px;
+
+  text-align: center;
+}
+
+.feature-card-text {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 10px 54px;
+
+  text-align: center;
 }
 
 /* search */
